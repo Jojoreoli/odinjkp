@@ -14,3 +14,4 @@ Lizard beats paper and spock
 
 Spock beats scissors and rock
 
+Call the jogo() function to play.
