@@ -2,11 +2,56 @@
 <html>
 <head>
   <title>Page Title</title>
+  <script src="https://kit.fontawesome.com/455065b29e.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="jokempo.js">
-    
-  </script>
+  <header>
+    <h1 class="header__title">RPSLS</h1>
+  </header>
+
+  <main>
+    <section class="scoreArea">
+      <h3 class="scoreArea__title">Choose your fate: </h3>
+      <div class="scoreArea__choicesDisplay">
+        <div class="userChoice disabled">
+          <i class="userChoice__icon far"></i>
+        </div>
+        <h2>VS</h2>
+        <div class="computerChoice disabled">
+          <i class="computerChoice__icon far"></i>
+        </div>
+      </div>
+      <div class="scoreArea__score">
+        <h2 class="scoreArea__result"></h2>
+      </div>
+    </section>
+
+    <section class="playArea">
+      <button class="playArea__input" onclick="inputHandler('rock')">
+          <i class="far fa-hand-rock"></i>
+      </button>
+        <button class="playArea__input" onclick="inputHandler('paper')">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button class="playArea__input" onclick="inputHandler('scissors')">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+        <button class="playArea__input" onclick="inputHandler('lizard')">
+          <i class="far fa-hand-lizard"></i>
+        </button>
+        <button class="playArea__input" onclick="inputHandler('spock')">
+          <i class="far fa-hand-spock"></i>
+        </button>
+    </section>
+  </main>
+
+  <script src="jokempo.js"></script>
 </body>
 </html>
